@@ -1,0 +1,516 @@
+/* STYLE SHEET FOR STYLES ADDED TO ALL PAGES */
+html
+{
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+	
+	/* Teal Background Gradient: css-tricks.com/examples/CSS3Gradient/ */
+	background-color: #007073;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image:        -webkit-gradient(linear, 100% 0%, 0% 0%, from(#007073), to(#000));
+	background-image: -webkit-linear-gradient(top, #007073, #000);
+	background-image:    -moz-linear-gradient(top, #007073, #000);
+	background-image:     -ms-linear-gradient(top, #007073, #000);
+	background-image:      -o-linear-gradient(top, #007073, #000);
+	
+	/* Set Global Font - Basis for Rest of Text */
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .85em;
+	
+	/* Force Scroll Bar */
+	overflow-y: scroll;
+}
+
+
+/* Children of #siteContainer should be positioned relative to its coordinate system */
+#siteContainer
+{
+	position: relative;
+}
+
+
+/* Set Up Page Structure and Width */
+.pageWidth
+{
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+/* Header Styles */
+header
+{
+	min-width: 900px;
+	background-color: #FFFFFF;
+	height: 100px;
+	box-shadow: 5px 0 15px black;
+}
+
+#topLogo
+{
+	position: relative;
+	top: 15px;
+	left: 40px;
+	float: left;
+}
+
+#topWelcomeBox
+{
+	float: right;
+	text-align: right;
+	padding-right: 20px;
+	position: relative;
+	top: 20px;
+}
+
+#topWelcomeBox > a
+{
+	display: block;
+}
+
+
+/* Section Styles */
+section
+{
+	padding: 15px;
+	margin: 15px;
+}
+
+section.bgField
+{
+	background: #cdb19b; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #cdb19b 0%, #c09e82 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#cdb19b), color-stop(100%,#c09e82)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #cdb19b 0%,#c09e82 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #cdb19b 0%,#c09e82 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #cdb19b 0%,#c09e82 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #cdb19b 0%,#c09e82 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdb19b', endColorstr='#c09e82',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+section.shadow
+{
+	box-shadow: 5px 5px 15px black;
+}
+
+section.corner
+{
+	border-radius: 15px;
+}
+
+section.center
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section > h2.title
+{
+	/*width: 100%;*/
+	border-bottom: 3px solid #007073;
+	font-size: 2em;
+	padding: 7px 20px 5px 20px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+}
+
+
+/* Link Styles */
+a:link, a:visited
+{
+	color: #007073;
+    text-decoration: underline;
+}
+a:active
+{
+    text-decoration: none;
+}
+th a:link, th a:visited{
+    color: #000000;
+    text-decoration: none;
+}
+th a:hover
+{
+    text-decoration: underline;
+}
+
+
+/* Form Input Styles */
+input:focus, textarea:focus
+{
+	outline: none;
+	box-shadow: 0 0 10px #007073;
+}
+
+.input, input[type="text"], input[type="password"], textarea
+{
+	border: none;
+	border-radius: 5px;
+	color: #007073;
+	padding: 5px;
+	width: 200px;
+}
+
+textarea
+{
+	font-family: inherit;
+	resize: none;
+	vertical-align: top;
+	width: 90%;
+	height: 6em;
+}
+
+.button, a.button, input[type="submit"], input[type="reset"], button
+{
+	font-size: 1.1em;
+	line-height: 100%;
+	text-decoration: none;
+	
+	display: inline-block;
+	border: 0;
+	border-radius: 7px;
+	background-color: #333;
+	color: #007073;
+	padding: 7px 20px !important;
+	margin: 1px !important;
+}
+
+.button:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover
+{
+	background-color: #007073;
+	color: #333;
+}
+
+
+/* Error Styles */
+.error, .error-color
+{
+	color: #444444;
+
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-origin: content-box;
+	background-size: 18px 18px;
+	background-color: #FAF7A7;
+
+	border: 1px solid #B5B02B;
+}
+
+.error
+{
+	margin: 10px;
+	padding: 7px 5px;
+	border-radius: 5px;
+
+	padding-left: 10px;
+	text-indent: -5px
+}
+
+ul.error > li
+{
+	font-size: 0.9em;
+	text-align: left;
+	padding: 5px;
+}
+
+ul.error > li:first-of-type
+{
+	padding-top: 0;
+}
+
+ul.error > li:last-of-type
+{
+	padding-bottom: 0;
+}
+
+
+/* Header Styles */
+section > h3
+{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 15px;
+}
+section > h3:not(:first-of-type)
+{
+	margin-top: 30px;
+}
+
+
+/* Text Formatting Styles */
+strong
+{
+	font-weight: bold;
+}
+section p
+{
+	padding: 5px;
+	margin: 5px;
+}
+
+
+/* Login Styles */
+section#loginBox
+{
+	margin-top: 30px;
+	box-sizing: border-box;
+	padding: 100px;
+}
+
+section#loginBox > h2, section#loginBox > h3
+{
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+}
+
+section#loginBox > h2
+{
+	font-size: 3em;
+	border-bottom: 3px solid #007073;
+}
+
+section#loginBox > h3
+{
+	font-size: 1.5em;
+}
+
+
+/* Image Styles */
+div#siteContainer img
+{
+	width: 20px;
+}
+
+
+/* Password Note div Styles */
+section#addUser tr:last-of-type div, section#editUser tr:last-of-type div, section#pswdReset tr:last-of-type div
+{
+	font-size: 0.9em;
+	margin-bottom: 10px;
+}
+
+/* Login Page Styles */
+section#loginBox
+{
+	width: 80%;
+}
+
+
+/* Index Page Styles */
+section#facultyBox
+{
+	background: #cdb19b; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #cdb19b 0%, #c09e82 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#cdb19b), color-stop(100%,#c09e82)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #cdb19b 0%,#c09e82 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #cdb19b 0%,#c09e82 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #cdb19b 0%,#c09e82 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #cdb19b 0%,#c09e82 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdb19b', endColorstr='#c09e82',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+section#adminBox
+{
+	background: #9ddddd; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #9ddddd 0%, #85d4d4 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#9ddddd), color-stop(100%,#85d4d4)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #9ddddd 0%,#85d4d4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #9ddddd 0%,#85d4d4 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #9ddddd 0%,#85d4d4 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #9ddddd 0%,#85d4d4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ddddd', endColorstr='#85d4d4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+section#SUBox
+{
+	background: #dd9d9d; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #dd9d9d 0%, #d48585 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#dd9d9d), color-stop(100%,#d48585)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #dd9d9d 0%,#d48585 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #dd9d9d 0%,#d48585 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #dd9d9d 0%,#d48585 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #dd9d9d 0%,#d48585 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd9d9d', endColorstr='#d48585',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+section.indexBox
+{
+	padding: 10px 30px 20px 30px;
+}
+
+section.indexBox > h2
+{
+	font-size: 1.5em;
+	border-bottom: 2px solid;
+	width: 100%;
+	margin: 5px auto;
+}
+
+section.indexBox > ul
+{
+	list-style: disc inside none;
+}
+
+section.indexBox > ul > li
+{
+	padding: 5px 0;
+}
+
+
+/* Paging Styles */
+.paging
+{
+	text-align: center;
+}
+
+.paging > ul > li
+{
+	display: inline-block;
+	padding: 3px 5px;
+}
+
+
+/* Sort Form Styles */
+form[name="sort"]
+{
+	text-align: right;
+	margin: 5px;
+}
+
+table th > a
+{
+	color: inherit;
+}
+
+
+/* General Table Styles */
+th, td
+{
+	vertical-align: middle;
+}
+
+table.widthFull
+{
+	width: 95%;
+	margin: 10px auto;
+}
+
+td.center, th.center
+{
+	text-align: center;
+}
+
+table.borderOutside, table.borderRows, table.borderColumns, table.borderAll
+{
+	border: 1px solid;
+}
+
+table.borderRows td, table.borderRows th, table.borderAll td, table.borderAll th
+{
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+table.borderColumns td, table.borderColumns th, table.borderAll td, table.borderAll th
+{
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+
+table.padded th, table.padded td
+{
+	padding: 5px 10px;
+}
+
+
+/* Vertical Table Styles */
+table.verticalTable
+{
+	border-collapse: separate;
+	border: 1px solid;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+}
+
+table.verticalTable th
+{
+	text-align: center;
+	font-size: 1.2em;
+	padding-bottom: 5px;
+	
+	border-bottom: 2px solid;
+}
+
+table.verticalTable tr:nth-child(even)
+{
+	background-color: #E0CEC0;
+}
+
+
+/* Horizontal Table Styles */
+table.horizontalTable th
+{
+	text-align: left;
+	font-weight: bold;
+}
+
+table.horizontalTable th:after
+{
+	content: ":";
+}
+
+
+/* Form Table Styles */
+table.formTable th
+{
+	text-align: right;
+	font-size: 1.2em;
+}
+
+table.formTable td
+{
+	text-align: left;
+}
+
+table.formTable th:after
+{
+	content: ': ';
+}
+
+table.formTable td[colspan="2"]
+{
+	text-align: right;
+}
+
+.selected
+{
+    font-weight: bold;
+}
+
+/* Clickable Row Styles */
+.mouseHover:hover
+{
+	background-color: #ECE2D9 !important;
+}
+
+.clickable
+{
+	/***** Set Pointer *****/
+	cursor: pointer;
+	
+	/***** Prevent Highlighting *****/
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}

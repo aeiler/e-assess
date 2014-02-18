@@ -1,0 +1,113 @@
+/* FCAR Page Styles */
+h4
+{
+	font-weight: bold;
+	font-size: 0.9em;
+	color: black;
+	margin: 5px;
+	margin-top: 15px;
+}
+h3
+{
+	font-weight: bold;
+	text-decoration: underline;
+	color: black;
+	margin: 5px;
+	margin-top: 15px;
+}
+h3:after
+{
+	content: ':';
+}
+
+textarea
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+section
+{
+	color: black;
+}
+ol
+{
+	list-style: decimal inside none;
+}
+
+table
+{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+td, th
+{
+	margin: 0;
+	padding: 4px;
+	border: 1px solid black;
+}
+td.header, th
+{
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+table.SLOXObjectiveTable, table.assessmentTable, table.reportTable
+{
+	width: 100%;
+	text-align: center;
+}
+table.gradeTable
+{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+table.gradeTable input
+{
+	width: 30px;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+}
+table.gradeTable td.header
+{
+	text-align: center;
+}
+table.courseTable
+{
+	width: 100%;
+}
+table.courseTable td.header
+{
+	text-align: left;
+	width: 150px;
+}
+table.courseTable td.header:after
+{
+	content: ':';
+}
+table.courseTable input[type='text']
+{
+	width: 20px;
+	text-align: center;
+}
+table.assessmentTable input
+{
+	width: 50px;
+	margin: 0 5px;
+	display: inline-block;
+	text-align: center;
+}
+table.assessmentTable td:first-of-type input
+{
+	width: 150px;
+	text-align: left;
+}
+
+textarea
+{
+	resize: vertical;
+	height: 8em;
+}
